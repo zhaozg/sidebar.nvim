@@ -164,6 +164,7 @@ function M.draw(sections_data)
 end
 
 function M.render_hl(bufnr, hl)
+    bufnr = bufnr or 0
     if not api.nvim_buf_is_loaded(bufnr) then
         return
     end
